@@ -1,0 +1,23 @@
+name: Run Python Code
+
+on:
+  push:
+    branches:
+      - main  # 修改为你的主分支名称
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11  # 指定所需的Python版本
+
+    - name: Run Python script
+      run: |
+        python snack.py  # 用你的Python脚本文件名替换your_script.py
