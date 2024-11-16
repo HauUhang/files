@@ -1,0 +1,117 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif; /* 设置全局字体 */
+    background-color: #f0f0f0; /* 设置背景颜色 */
+    margin: 0; /* 去掉默认外边距 */
+    padding: 0; /* 去掉默认内边距 */
+}
+
+/* 金色标题的样式 */
+.title {
+    color: gold; /* 设置标题为金色 */
+    text-align: center; /* 水平居中 */
+    font-size: 36px; /* 设置字体大小 */
+    margin-bottom: 20px; /* 控制标题与下方成就栏的距离 */
+    font-weight: bold; /* 设置字体粗细 */
+}
+
+/* 容器样式 */
+.container {
+    width: 70%; /* 设置容器宽度 */
+    margin: 20px auto; /* 垂直方向20px间距，水平居中 */
+    padding: 20px; /* 设置容器内部填充 */
+    background-color: #fff; /* 背景颜色为白色 */
+    border-radius: 8px; /* 圆角边框 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+}
+
+/* 分区样式 */
+.section {
+    margin-bottom: 50px; /* 底部外边距 */
+    padding: 20px; /* 内部填充 */
+    border-radius: 8px; /* 圆角边框 */
+    background-color: #fafafa; /* 浅灰背景色 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* 轻微阴影效果 */
+}
+
+/* 分区标题样式 */
+.section h2 {
+    font-size: 24px; /* 标题字体大小 */
+    color: #333; /* 深灰色字体 */
+    text-align: center; /* 居中对齐 */
+    margin-bottom: 10px; /* 标题底部间距 */
+}
+
+/* 成就条目样式 */
+.achievement {
+    display: flex; /* 设置为弹性布局 */
+    flex-direction: row; /* 子元素水平排列 */
+    align-items: center; /* 垂直居中对齐子元素 */
+    justify-content: space-between; /* 两端对齐 */
+    margin-bottom: 20px; /* 成就条目底部外边距 */
+    padding: 10px; /* 内部填充 */
+    background-color: #fff; /* 白色背景 */
+    border-radius: 6px; /* 圆角边框 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* 轻微阴影效果 */
+}
+
+/* 成就标题样式 */
+.achievement h3 {
+    font-size: 20px; /* 字体大小 */
+    margin: 0 0 5px; /* 标题底部间距 */
+}
+
+/* 成就描述样式 */
+.achievement p {
+    font-size: 14px; /* 描述文字大小 */
+    color: #666; /* 字体颜色 */
+    margin: 0 0 10px; /* 描述底部间距 */
+}
+
+/* 成就文本容器样式 */
+.achievement-text {
+    display: flex;
+    flex-direction: column; /* 垂直排列标题和说明 */
+}
+
+/* 按钮样式 */
+.achievement button {
+    padding: 8px 16px; /* 内部填充 */
+    border: none; /* 无边框 */
+    border-radius: 4px; /* 圆角 */
+    font-size: 14px; /* 字体大小 */
+    cursor: pointer; /* 鼠标悬停时显示手形光标 */
+    background-color: gray; /* 默认背景色 */
+    color: white; /* 字体颜色 */
+    margin-left: auto; /* 让按钮位于右侧 */
+}
+
+/* 已完成按钮样式 */
+.achievement button.completed {
+    background-color: green; /* 按钮完成后的背景色 */
+}
+
+/* 烟花效果的样式 */
+#fireworks {
+    display: none; /* 默认不显示 */
+    position: fixed; /* 固定定位 */
+    top: 80%; /* 垂直 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 使元素居中 */
+    text-align: center; /* 居中对齐文本 */
+    z-index: 1000; /* 提高层级 */
+}
+
+/* 烟花图片样式 */
+#fireworks img {
+    max-width: 200px; /* 最大宽度 */
+    width: 100%; /* 自适应宽度 */
+}
+
+/* 烟花提示文字样式 */
+#fireworks p {
+    font-size: 24px; /* 字体大小 */
+    color: gold; /* 字体颜色 */
+    font-weight: bold; /* 粗体 */
+    margin-top: 20px; /* 顶部外边距 */
+}
